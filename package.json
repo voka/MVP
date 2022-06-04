@@ -1,0 +1,22 @@
+{
+  "name": "onthefood",
+  "version": "1.0.0",
+  "description": "UX 개선 기반 맛집 아이템",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voka/OntheFood.git"
+  },
+  "keywords": [
+    "Food"
+  ],
+  "author": "JS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/voka/OntheFood/issues"
+  },
+  "homepage": "https://github.com/voka/OntheFood#readme"
+}
