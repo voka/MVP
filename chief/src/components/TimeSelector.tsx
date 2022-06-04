@@ -1,22 +1,21 @@
 import React , { useState}from "react";
 import styled from 'styled-components';
-import TimePicker from 'react-time-picker'
-import NumberPicker from "react-widgets/NumberPicker";
+import TimePicker, { TimePickerValue } from 'react-time-picker'
 
 
 export default function TimeSelector(){
 
-  const [value, setValue] = useState<string>('05:00');
+  const [value, setValue] = React.useState<TimePickerValue>(new Date());
   return(
-    <NumberPick>
+    <TimeZone>
       <TimePicker value={value} onChange={setValue}>
       </TimePicker>
-    </NumberPick>
+    </TimeZone>
   )
 }
 
 
-const NumberPick = styled.div`
+const TimeZone = styled.div`
   height: 32px;
   display: flex;
   align-items: center;
