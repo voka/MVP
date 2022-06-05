@@ -25,7 +25,7 @@ const BoxSizing = styled.div`
 
 const Cell = styled.div`
   width: 100%;
-  padding-top: 120%;
+  padding-top: 100%;
   position: relative;
   background-color: rgb(244, 244, 244);
 `
@@ -36,6 +36,7 @@ const Image = styled.img`
   object-fit: cover;
   position: absolute;
   inset: 0px;
+  cursor: pointer;
 `
 
 const WhiteSpace = styled.div`
