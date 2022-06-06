@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-import FoodInfos from '../Data/Foods';
+import {FoodInfos} from '../Data/Foods';
 import Header from '../components/Header';
 import Filter from '../components/Filter';
 import FoodImage from '../components/FoodImage';
@@ -14,7 +14,7 @@ export default function Homepage(){
       <Filter/>
       <Grid>
         {FoodInfos.map((food,i)=>{
-          return (<FoodImage imageUrl={food.imgUrl} mapUrl={food.mapUrl} key={i}/>);
+          return (<FoodImage food={food} key={i}/>);
         })}
       </Grid>
     </BoxSizing>
